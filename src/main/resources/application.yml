@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: ekumen-tourism-tracker-eureka-server
+server:
+  port: 8761
+
+# eureka server configuration
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  instance:
+    hostname: ekumen-tourism-tracker-eureka-server
+  server:
+    renewal-percent-threshold: 0.90
+
+
